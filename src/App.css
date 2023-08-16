@@ -14,11 +14,10 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background-color: #ddcfe6;
   min-height: 100vh;
-  display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: top;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
@@ -35,4 +34,52 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.navbar {
+  display: flex;
+  justify-content: first baseline; 
+  align-items: center;
+  background-color: #400b4b;
+  padding-left: 60px; 
+  padding-right: 60px;
+  color: rgb(230, 229, 229);
+  font-weight: bold;
+  width: auto; 
+  margin: 0 auto;
+}
+
+.navbar-brand {
+  font-size: 2.2rem;
+  text-shadow:
+  -2px -2px 0 black,
+   2px -2px 0 black,
+  -2px  2px 0 black,
+   2px  2px 0 black;
+}
+
+.navbar-categories {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.navbar-categories li a {
+  text-decoration: none;
+  font-size: 25px;
+  padding: 10px;
+  color: rgb(230, 229, 229);
+  text-shadow:
+    -2px -2px 0 black,
+     2px -2px 0 black,
+    -2px  2px 0 black,
+     2px  2px 0 black;
+}
+
+.navbar-categories li a:hover {
+  text-decoration: underline;
+}
+
+.content {
+  padding: 20px; 
 }
